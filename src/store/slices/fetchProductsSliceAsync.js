@@ -8,8 +8,9 @@ const fetchProductsAsync = createAsyncThunk(
       if (!response.ok) {
         throw new Error(`fell to fetch product`);
       }
-      const data = await response.json();
-      return data;
+      // const data = await response.json();
+      // return data;
+      console.log(response);
     } catch (error) {
       return `${error}`;
     }
